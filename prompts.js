@@ -16,18 +16,13 @@ console.log(songs.length);
 
 //for loop to iterate through every song in the array and print each song's value to the console.
 for(let i = 0; i <= songs.length; i++){
-   let valueOfSong = songs.indexOf(i)
-    console.log(valueOfSong);
-}//??
+    console.log(i);
+}
     
 
 //each song and value
 for(let i = 0; i <= songs.length; i++){
-    let valueOfSong = songs.indexOf(i)
-    for(let m = i + 1; m <= songs.length; i++){
-        console.log(valueOfSong + ": " + songs.valueOf(m));
+    for(let j = 0; j <= songs[i].length; j++){
+        console.log(i + ": " + songs[j]);
     }
-
-}//????
-
-let lastSong = songs.length - 1
+}
