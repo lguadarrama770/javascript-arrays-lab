@@ -2,7 +2,12 @@
 //Declare an array of at least 6 integers. 
 let int = [1,2,3,4,5,6] 
 //Create a function that will sort the integer array in ascending and descending order
-//?????
+function ascending() {
+    return int.sort(function(a, b){return a-b});
+}
+function descending() {
+    return int.sort(function(a, b){return b-a});
+}
 
 //EXCERCISE 3:
 //Create a list of your favorite movies, music, or video games using a multidimensional array
@@ -20,8 +25,7 @@ multiDimensionalArray[1].unshift('SpiderMan Far from Home');
 
 //Using for loops, iterate through the arrays and print the elements to the console.
 for(i = 0; i < multiDimensionalArray.length; i++){
-    let innerArrays = multiDimensionalArray[i].length;
-    for(m = 0; m < innerArrays; i++){
-        console.log(multiDimensionalArray[i][m]);
+    for(j = 0; j < multiDimensionalArray[i].length; j++){
+        console.log(multiDimensionalArray[i][j]);
     }
 }
